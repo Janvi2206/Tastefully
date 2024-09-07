@@ -1,0 +1,11 @@
+/* src/App.css */
+body {
+  background-color: #f5f5dc; /* Beige background for the entire page */
+  margin: 0;
+  font-family: Arial, sans-serif; /* Set a default font */
+}
+
+.container {
+  text-align: center; /* Center text in the container */
+  margin-top: 50px; /* Add top margin */
+}

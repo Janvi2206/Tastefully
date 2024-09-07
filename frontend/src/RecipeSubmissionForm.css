@@ -1,0 +1,138 @@
+/* src/components/RecipeSubmissionForm.css */
+.recipe-form {
+  position: relative; /* Positioning context for the pseudo-element */
+  background-image: url('img.avif'); /* Set your background image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh; /* Full height for the background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: rgb(5, 139, 5); /* Adjust text color for readability */
+  overflow: hidden; /* Prevent overflow of the pseudo-element */
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.translucent-container {
+  background-color: rgba(255, 255, 255, 0.8); /* Translucent white background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding around input area */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  position: relative; /* Positioning context for form steps */
+  z-index: 2; /* Ensure this container is above the overlay */
+  font-size: 1.2rem; /* Increase font size */
+  font-weight: bold; /* Make text bold */
+  width: 90%; /* Responsive width */
+  max-width: 600px; /* Max width */
+}
+
+.translucent-container label {
+  font-size: 1.4rem; /* Adjust label font size */
+}
+
+.translucent-container input, .translucent-container textarea {
+  font-size: 1rem; /* Adjust input and textarea font size */
+}
+
+.form-step {
+  margin-bottom: 20px; /* Space between steps */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%; /* Full width */
+  padding: 10px; /* Increased padding for better touch targets */
+  margin-bottom: 10px; /* Adjusted margin for spacing */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  background-color: rgba(255, 255, 255, 0.2); /* Slightly translucent white */
+  color: #000; /* Text color */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for focus effects */
+}
+
+input:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle shadow effect */
+  outline: none; /* Remove default outline */
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #28a745; /* Green button color */
+  color: white;
+}
+
+button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+.navigation-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between buttons */
+  align-items: center; /* Center items vertically */
+  margin-top: 20px; /* Add some space above the buttons */
+}
+
+.navigation-buttons {
+  display: flex; /* Use flexbox for layout */
+}
+
+.navigation-buttons button {
+  margin: 0 5px; /* Add a small horizontal margin to each button */
+  padding: 10px; /* Ensure buttons have enough padding */
+  background-color: #28a745; /* Green button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navigation-buttons button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+.dish-type-container {
+  position: relative; /* Positioning context for the cross button */
+}
+.difficulty-type-container {
+  position: relative; /* Positioning context for the cross button */
+}
+
+.deselect-option {
+  position: absolute; /* Position it absolutely within the container */
+  right: 10px; /* Adjust the position from the right */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for vertical centering */
+  cursor: pointer; /* Change cursor to pointer */
+  color: #888; /* Color of the cross */
+  font-weight: bold; /* Make it bold */
+  font-size: 1.2rem; /* Adjust size if needed */
+}
+.submit-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: flex-end; /* Align the submit button to the right */
+  margin-top: 20px;
+}
+
+.submit-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px; /* Optional: Add some space between the submit button and navigation buttons */
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}

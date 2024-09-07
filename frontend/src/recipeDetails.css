@@ -1,0 +1,56 @@
+/* recipedetails.css */
+
+/* Container for the entire recipe details */
+.recipe-details-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Styling for the recipe details section */
+  .recipe-details {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the recipe image */
+  .recipe-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for headings and text */
+  h2 {
+    margin-top: 0;
+    font-size: 2em;
+    color: #333;
+  }
+  
+  p {
+    font-size: 1em;
+    margin: 10px 0;
+  }
+  
+  /* Styling for strong text */
+  strong {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  /* Error and loading text styling */
+  p.error {
+    color: red;
+    font-weight: bold;
+  }
+  
+  p.loading {
+    color: #666;
+  }
+  

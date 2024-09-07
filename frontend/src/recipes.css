@@ -1,0 +1,58 @@
+/* Container for the entire recipes page */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styling for the recipes list */
+.recipe-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Styling for each recipe card */
+.recipe-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 100%;
+    max-width: 300px;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Recipe card image */
+.recipe-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Recipe card title */
+.recipe-title {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Recipe card description */
+.recipe-description {
+    font-size: 1em;
+    color: #555;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+/* Loading message */
+p.loading {
+    font-size: 1.2em;
+    color: #888;
+    text-align: center;
+}
